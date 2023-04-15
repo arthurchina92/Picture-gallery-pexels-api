@@ -21,7 +21,7 @@ export default function App() {
         <Stack.Screen
           name="HomeScreen"
           component={HomeScreen}
-          options={({navigation, route})=> ({
+          options={{
             headerLeft: () => (
               <Image
                 source={pexelLogo}
@@ -43,12 +43,28 @@ export default function App() {
             ),
             title: "Pexels app",
             headerTintColor: "#fff",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
             headerStyle: {
               backgroundColor: "#0d0d0d",
             },
-          })}
+          }}
           /> 
-        <Stack.Screen name="ImageScreen" component={ImageScreen} />
+        <Stack.Screen 
+           name="ImageScreen" 
+           component={ImageScreen}
+           options={{
+            title: "Pexels app",
+            headerTintColor: "#fff",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+            headerStyle: {
+              backgroundColor: "#0d0d0d",
+            },
+           }}
+           />
       </Stack.Navigator>
       <StatusBar />
     </NavigationContainer>
