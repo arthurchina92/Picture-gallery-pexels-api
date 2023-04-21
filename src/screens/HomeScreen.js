@@ -2,7 +2,7 @@ import { View, Text, StyleSheet} from "react-native";
 import React, { useEffect, useState, useContext } from "react";
 import { getImages } from "../../api/pexels";
 import { ImageList } from "../components/ImageList";
-import { SearchContext } from "../../App";
+import { SearchContext } from "../contexts/SearchContext";
 import { Input, Button} from "@rneui/base";
 
 function HomeScreen() {

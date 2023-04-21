@@ -5,9 +5,9 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Text, Image } from "react-native";
 import { HomeScreen } from "./src/screens/HomeScreen";
 import { ImageScreen } from "./src/screens/ImageScreen";
-import pexelLogo from "./assets/pexelsicon.png";
+import pexelLogo from "./assets/pexelsLogo.png"
+import { SearchContext } from "./src/contexts/SearchContext";
 
-export const SearchContext = createContext(null);
 const Stack = createNativeStackNavigator();
 
 export default function App() {

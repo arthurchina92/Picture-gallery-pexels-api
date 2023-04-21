@@ -12,8 +12,8 @@ const navigation = useNavigation();
     >
       <Image
         source={{
-            uri: image.src.medium
-            ? image.src.medium
+            uri: image.src.portrait
+            ? image.src.portrait
             : 'https://us.123rf.com/450wm/ariesticon/ariesticon2006/ariesticon200600178/149137927-icono-de-imagen-aislado-sobre-fondo-blanco-icono-de-vector-de-imagen-vector-de-icono-de-galer%C3%ADa-de.jpg?ver=6',
         }}
         style={Styles.image}
